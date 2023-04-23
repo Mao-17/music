@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    <title>{% block title %}{% endblock %}</title>
+  </head>
+  <body>
+    {% if user.is_authenticated %}
+      <p>Logged in as {{ user.email }}</p>
+      <a href="{% url 'music:upload' %}">Upload Music</a>
+    {% else %}
+      <a href="{% url 'login' %}">Login</a> / <a href="{% url 'register' %}">Register</a>
+    {% endif %}
+    {% block content %}{% endblock %}
+  </body>
+</html>

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h2>Music</h2>
+  <ul>
+    {% for music_file in music_files %}
+      <li>
+        {{ music_file.title }}
+        <ul>
+          <li><a href="{{ music_file.file.url }}">Download</a></li>
+          {% if music_file.is_protected %}
+            <li>Protected file</li>
+          {% endif %}
+        </ul>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}
