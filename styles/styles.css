@@ -1,0 +1,27 @@
+body {
+    font-family: sans-serif;
+  }
+  
+  h2 {
+    margin-top: 20px;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin-top: 10px;
+  }
+  
+  a {
+    color: #06c;
+    text-decoration: none;
+  }
+  
